@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/horizonte"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/imagen_de_fondo"
+        />
+
+    <TextView
+        android:id="@+id/titulo"
+        style="@style/etiquetas"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/mis_tareas"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/subtitulo"
+        style="@style/etiquetas"
+        android:layout_below="@id/titulo"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:text="@string/itt"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/subtitulo"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/input_text"
+                android:id="@+id/cajaUser"
+                android:hint="@string/usuario">
+                <requestFocus/>
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/input_text"
+                android:id="@+id/cajaPass"
+                android:hint="@string/pass"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        app:rippleColor="@color/colorAccent"
+        android:text="@string/login"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:onClick="login"
+        />
+
+    <TextView
+        android:id="@+id/cuentaNueva"
+        style="@style/etiquetas"
+        android:layout_below="@id/botonLogin"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:text="@string/crea_una_cuenta"
+        android:onClick="crearCuenta"
+         />
+
+
+</RelativeLayout>

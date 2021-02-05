@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    android:padding="5dip">
+
+    <ImageView android:id="@+id/imgIcono2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tooltip_check"
+        />
+
+    <TextView android:id="@+id/txtMensaje2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dip" />
+</LinearLayout>

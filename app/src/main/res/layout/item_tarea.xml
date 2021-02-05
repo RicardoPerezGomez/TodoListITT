@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp" >
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@id/button"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/terminado"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/colorPrimary"
+        app:rippleColor="@color/colorAccent"
+        app:icon="@mipmap/checked"
+        app:iconSize="17dp"
+        app:cornerRadius="8dp"
+        android:onClick="borrarTarea"/>
+</RelativeLayout>
